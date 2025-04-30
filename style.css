@@ -67,5 +67,9 @@ body {
     color: #0d47a1;
     cursor: pointer;
   }
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
   
   

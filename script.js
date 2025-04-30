@@ -78,7 +78,10 @@ const skillsChart = new Chart(ctx, {
           clamp: true         // ensures it stays inside bar
         }
       },
-    responsive: true
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+      }
   },
   plugins: [ChartDataLabels]
 });
