@@ -44,4 +44,28 @@ body {
     margin-top: 2rem;
     color: #1a237e;
   }
+
+  .nav-buttons {
+    margin-top: 1rem;
+  }
+  
+  .nav-btn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1a237e;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-btn:hover {
+    background-color: #c5cae9;
+    color: #0d47a1;
+    cursor: pointer;
+  }
+  
   
