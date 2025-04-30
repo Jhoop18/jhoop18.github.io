@@ -21,24 +21,33 @@
 
   <section id="education" class="section">
     <h2>Education</h2>
-    <div class="card">
-      <!-- <img src="assets/education-campus.png" alt="Campus View of Tennessee Tech" class="edu-img" /> -->
-      
-      <h3>Tennessee Tech University</h3>
-      <ul>
-        <strong>B.S. in Computer Science — Data Science & AI Concentration</strong>
+    <div class="card edu-card">
+      <!-- Left column: your text -->
+      <div class="edu-content">
+        <h3>Tennessee Tech University</h3>
         <ul>
-            <li>Aug 2021 – Dec 2024 | GPA: 3.52 (Major: 3.60)</li>
+          <strong>B.S. in Computer Science — Data Science & AI Concentration</strong>
+          <ul>
+            <li>Aug 2021 – Dec 2024 | GPA: 3.52 (Major: 3.60)</li>
+          </ul>
         </ul>
-      </ul>
-      <ul>
-        <strong>MBA (in progress)</strong>
         <ul>
-            <li>Remote | Graduation: May 2026</li>
+          <strong>MBA (in progress)</strong>
+          <ul>
+            <li>Remote | Graduation: May 2026</li>
+          </ul>
         </ul>
-      </ul>
+      </div>
+  
+      <!-- Right column: the image -->
+      <div class="edu-image">
+        <img src="assets/education-campus.png"
+             alt="Campus View of Tennessee Tech" />
+      </div>
     </div>
   </section>
+  
+  
   
   
 
@@ -53,6 +62,31 @@
         <li>Deployed the application on AWS (EC2) for scalable, production-grade hosting</li>
       </ul>
     </div>
+
+    <div class="card">
+      <h3>Loan Approval Prediction Model</h3>
+      <ul>
+        <li>Cleaned and preprocessed a 614-record Kaggle dataset: imputed missing values, encoded categories, and standardized features</li>
+        <li>Built and compared three classifiers—Naive Bayes (78% accuracy), optimized KNN (80% accuracy), and tuned neural network (80% accuracy)</li>
+        <li>Identified Credit_History as the strongest predictor (correlation 0.54) and used an 80/20 train/test split for validation</li>
+        <li>Demonstrated model utility as a decision-support tool for borrowers and banks, with human review recommended for final approval</li>
+        <li>Collaborated on data cleaning, visualization, and reporting; individual contributions: KNN implementation, neural net tuning, presentation design, and report authorship</li>
+        <li>View code and documentation on GitHub: <a href="https://github.com/Jscott7227/CSC_5240_Project">CSC_5240_Project</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Airline Delays Analysis</h3>
+      <ul>
+        <li>Analyzed 20+ million flight records to identify delay patterns by carrier, route, and seasonality</li>
+        <li>Cleaned and aggregated raw data using Python (pandas) to handle missing values, outliers, and inconsistent timestamps</li>
+        <li>Visualized delay distributions and trends with matplotlib, highlighting peak delay windows and top-performing carriers</li>
+        <li>Built a logistic regression model to predict whether a flight would be delayed by more than 15 minutes, achieving ~72% accuracy</li>
+        <li>Packaged analysis scripts and visualizations in Jupyter notebooks for reproducibility and collaboration</li>
+        <li>Explore the full code and documentation on GitHub: <a href="https://github.com/Evan-Burch/2019-Airline-Delays">2019-Airline-Delays</a></li>
+      </ul>
+    </div>
+    
   </section>
 
   <section id="skills" class="section">

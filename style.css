@@ -166,3 +166,24 @@ body {
     }
   }
   
+  /* make the card a two-column flex container */
+.edu-card {
+  display: flex;
+  align-items: flex-start;    /* top-align both columns */
+  gap: 1rem;                /* space between text and image */
+  padding: 1rem;            /* adjust card padding as desired */
+}
+
+/* text column grows to fill space */
+.edu-content {
+  flex: 1;
+}
+
+/* image column stays its natural size, but capped */
+.edu-image img {
+  max-width: 350px;       /* shrink to fit your “blue box” */
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;  /* optional styling */
+}
+
