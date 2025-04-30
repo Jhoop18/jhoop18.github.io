@@ -146,3 +146,16 @@ footer {
     justify-content: center;
   }
 }
+@media (max-width: 600px) {
+  .edu-card {
+    flex-direction: column !important;
+  }
+  .edu-image {
+    order: -1 !important;         /* image first */
+    align-self: center !important;
+    margin-bottom: 1rem !important;
+  }
+  .edu-image img {
+    max-width: 140px !important;
+  }
+}
