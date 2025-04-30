@@ -128,7 +128,7 @@ footer {
     margin-bottom: 1rem;
   }
   .edu-image img {
-    max-width: 140px;   /* smaller on phone */
+    max-width: 200px;   /* smaller on phone */
   }
 
   /* center nav buttons */
@@ -156,6 +156,6 @@ footer {
     margin-bottom: 1rem !important;
   }
   .edu-image img {
-    max-width: 140px !important;
+    max-width: 300px !important;
   }
 }
