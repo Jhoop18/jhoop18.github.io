@@ -1,189 +1,148 @@
+/* --------- Base Styles --------- */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e8f0fe;
-    color: #212121;
-  }
-  
-  .hero {
-    background: linear-gradient(to right, #1a237e, #3949ab);
-    color: #fff;
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-  
-  nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .nav-buttons {
-    margin-top: 1rem;
-  }
-  
-  .nav-btn {
-    display: inline-block;
-    background-color: #ffffff;
-    color: #1a237e;
-    padding: 0.5rem 1rem;
-    margin: 0.25rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    border: 2px solid #ffffff;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .nav-btn:hover {
-    background-color: #c5cae9;
-    color: #0d47a1;
-    cursor: pointer;
-  }
-  
-  .section {
-    padding: 3rem 1rem;
-    max-width: 960px;
-    margin: auto;
-  }
-  
-  .card {
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    border-bottom: 2px solid #9fa8da;
-    padding-bottom: 0.5rem;
-    color: #1a237e;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #c5cae9;
-    margin-top: 2rem;
-    color: #1a237e;
-  }
-  
-  .skills-container {
-    background: #f0f4ff;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  .skill-list {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-  
-  .skill-list li {
-    background-color: #e0e7ff;
-    color: #1e1b4b;
-    padding: 0.5rem 0.75rem;
-    border-radius: 5px;
-    font-weight: 600;
-  }
-  
-  .skill-bar {
-    margin: 10px 0;
-  }
-  
-  .skill-label {
-    font-weight: 600;
-    display: block;
-    margin-bottom: 4px;
-  }
-  
-  .progress {
-    background-color: #e0e0e0;
-    border-radius: 8px;
-    overflow: hidden;
-    height: 20px;
-    max-width: 100%;
-  }
-  
-  .progress-fill {
-    height: 100%;
-    color: white;
-    font-size: 0.8rem;
-    line-height: 20px;
-    padding-left: 10px;
-  }
-  
-  .advanced {
-    background-color: #38b000;
-    width: 100%;
-  }
-  
-  .intermediate {
-    background-color: #f9c74f;
-    width: 66%;
-    color: black;
-  }
-  
-  .beginner {
-    background-color: #f94144;
-    width: 33%;
-  }
-  .skill-list li:hover {
-    background-color: #d6e0ff;
-    transform: scale(1.05);
-    transition: 0.2s ease-in-out;
-  }
-  h3 {
-    margin-top: 2rem;
-    border-left: 4px solid #3949ab;
-    padding-left: 0.5rem;
-    color: #1a237e;
-  }
-
-  @media screen and (max-width: 600px) {
-    .skill-list {
-      justify-content: center;
-    }
-  
-    nav {
-      flex-wrap: wrap;
-    }
-  
-    .nav-btn {
-      margin: 5px 8px;
-    }
-  }
-  
-  /* make the card a two-column flex container */
-.edu-card {
-  display: flex;
-  align-items: flex-start;    /* top-align both columns */
-  gap: 1rem;                /* space between text and image */
-  padding: 1rem;            /* adjust card padding as desired */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f0fe;
+  color: #212121;
 }
 
-/* text column grows to fill space */
+/* --------- Hero & Nav --------- */
+.hero {
+  background: linear-gradient(to right, #1a237e, #3949ab);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.nav-buttons {
+  margin-top: 1rem;
+}
+.nav-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #1a237e;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav-btn:hover {
+  background-color: #c5cae9;
+  color: #0d47a1;
+  cursor: pointer;
+}
+
+/* --------- Sections & Cards --------- */
+.section {
+  padding: 3rem 1rem;
+  max-width: 960px;
+  margin: auto;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  border-bottom: 2px solid #9fa8da;
+  padding-bottom: 0.5rem;
+  color: #1a237e;
+}
+h3 {
+  margin-top: 2rem;
+  border-left: 4px solid #3949ab;
+  padding-left: 0.5rem;
+  color: #1a237e;
+}
+
+/* --------- Education Card Two-Column Layout --------- */
+.edu-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+}
 .edu-content {
   flex: 1;
 }
-
-/* image column stays its natural size, but capped */
 .edu-image img {
-  max-width: 350px;       /* shrink to fit your “blue box” */
+  max-width: 350px;
   width: 100%;
   height: auto;
-  border-radius: 0.5rem;  /* optional styling */
+  border-radius: 0.5rem;
 }
 
+/* --------- Skills List --------- */
+.skill-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.skill-list li {
+  background-color: #e0e7ff;
+  color: #1e1b4b;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: transform 0.2s, background-color 0.2s;
+}
+.skill-list li:hover {
+  background-color: #d6e0ff;
+  transform: scale(1.05);
+}
+
+/* --------- Footer --------- */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #c5cae9;
+  margin-top: 2rem;
+  color: #1a237e;
+}
+
+/* --------- Responsive --------- */
+@media (max-width: 600px) {
+  /* stack the edu card on mobile */
+  .edu-card {
+    flex-direction: column;
+  }
+  .edu-image {
+    order: -1;          /* show image above text */
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+  .edu-image img {
+    max-width: 140px;   /* smaller on phone */
+  }
+
+  /* center nav buttons */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-btn {
+    margin: 5px 8px;
+  }
+
+  /* center skills */
+  .skill-list {
+    justify-content: center;
+  }
+}
