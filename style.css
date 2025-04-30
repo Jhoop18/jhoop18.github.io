@@ -41,7 +41,6 @@ nav a:hover {
 .nav-btn:hover {
   background-color: #c5cae9;
   color: #0d47a1;
-  cursor: pointer;
 }
 
 /* --------- Sections & Cards --------- */
@@ -80,7 +79,7 @@ h3 {
   flex: 1;
 }
 .edu-image img {
-  max-width: 350px;
+  max-width: 450px;    /* larger on desktop */
   width: 100%;
   height: auto;
   border-radius: 0.5rem;
@@ -116,22 +115,22 @@ footer {
   color: #1a237e;
 }
 
-/* --------- Responsive --------- */
+/* --------- Responsive for ≤600px --------- */
 @media (max-width: 600px) {
-  /* stack the edu card on mobile */
+  /* Education card stacks, image first */
   .edu-card {
     flex-direction: column;
   }
   .edu-image {
-    order: -1;          /* show image above text */
+    order: -1;
     align-self: center;
     margin-bottom: 1rem;
   }
   .edu-image img {
-    max-width: 200px;   /* smaller on phone */
+    max-width: 300px;   /* fills most of the card width */
   }
 
-  /* center nav buttons */
+  /* Center nav buttons */
   nav {
     display: flex;
     flex-wrap: wrap;
@@ -141,21 +140,16 @@ footer {
     margin: 5px 8px;
   }
 
-  /* center skills */
+  /* Center skills list */
   .skill-list {
     justify-content: center;
   }
-}
-@media (max-width: 600px) {
-  .edu-card {
-    flex-direction: column !important;
+
+  /* Add breathing room in the text */
+  .edu-content h3 {
+    margin: 1rem 0 0.5rem;
   }
-  .edu-image {
-    order: -1 !important;         /* image first */
-    align-self: center !important;
-    margin-bottom: 1rem !important;
-  }
-  .edu-image img {
-    max-width: 300px !important;
+  .edu-content ul > ul {
+    margin: 0.5rem 0 1.5rem;
   }
 }
